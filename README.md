@@ -1,17 +1,37 @@
 # Noksha
 A web development project
 
-05/06/2022
-1. Custom-made Navigation bar
-   i. Navigation bar has: 
-      a. Clickable logo
-      b. Search Box
-      c. Menu
-      d. Add to cart icon with hover effect
-      e. Profile icon with hover effect
-2. Footer
-   i. Social media icon
-   ii. Row-column divison:
-       a. Store information: location, mobile, mail
-       b. Category
-       c. About
+5th June, 2022
+<ol>
+   <li> Custom-made Navigation bar
+      <ol>
+         <li>Navigation bar has:
+            <ol>
+               <li>Clickable logo</li>
+               <li>Search Box</li>
+               <li>Menu</li>
+               <li>Add to cart icon with hover effect</li>
+               <li>Profile icon with hover effect</li>
+            </ol>
+         </li>
+      </ol>
+   </li>
+   <li>Footer
+      <ol>
+         <li>Social media icon</li>
+         <li>Row-column divison:
+            <ol>
+                <li>Store information: 
+                   <ol type="I">
+                     <li>Location</li> 
+                     <li>Mobile</li>
+                     <li>Mail</li>
+                   </ol>
+                </li>
+                <li>Category</li>
+                <li>About</li>
+             </ol>
+           </li>
+      </ol>
+   </li>
+</ol>
