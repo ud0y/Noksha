@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styleLogin.css" />
+    <link rel="icon" href="img/flower.svg" type="image/svg+xml" />
+    <title>- Noksha -</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <img class="img" src="img/SVG/register.svg" />
+          <input type="text" placeholder="Full Name" class="input_design" />
+          <input type="email" placeholder="Email" class="input_design" />
+          <input type="password" placeholder="Password" class="input_design" />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input_design"
+          />
+          <input type="submit" class="btn" value="Sign up" />
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <img src="img/SVG/avatar.svg" class="img1" />
+          <input type="email" placeholder="Email" class="input_design" />
+          <input type="password" placeholder="Password" class="input_design" />
+          <input type="submit" class="btn" value="Login" />
+          <a href="#">Forgot your password?</a>
+          <span>----OR----</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <div class="ic">
+              <a href="index.html"
+                ><img src="img/flower.svg" class="logo-img-1"
+              /></a>
+            </div>
+            <h2>Have an Accocunt?</h2>
+            <input type="submit" class="btn2" id="signIn" value="login" />
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>New Here?</h1>
+            <h2>Start journey with us</h2>
+            <div class="ic">
+              <a href="index.html"
+                ><img src="img/flower.svg" class="logo-img-1"
+              /></a>
+            </div>
+            <input type="submit" class="btn1" id="signUp" value="register" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

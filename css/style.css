@@ -7,10 +7,55 @@
   background-position: center;
 }
 
-.img-logo {
-  width: 150px;
-  margin-right: 10vh;
+.img-logo-part-1 {
+  width: 15%;
+  margin-left: -20px;
   cursor: pointer;
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-logo-part-2 {
+  width: 35%;
+}
+
+.icon {
+  color: black;
 }
 
 .fa-custom {
@@ -31,6 +76,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .mainNavbar input[type="text"] {
@@ -47,10 +95,12 @@
   text-decoration: none;
   list-style: none;
   align-items: center;
+  margin-right: 2%;
 }
 
 .nav-elem {
   margin-top: 5%;
+  margin-right: 4%;
 }
 
 .nav-elem a:hover,
@@ -126,7 +176,9 @@ button[type="submit"] {
   margin: 0;
   border: 1px solid transparent;
   border-radius: inherit;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
   cursor: pointer;
   opacity: 0.7;
 }
@@ -140,4 +192,22 @@ input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #1183d6;
   border-color: #1183d6;
   outline: none;
+}
+
+.colBody {
+  color: #fff;
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rowBody:after {
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .colBody {
+    width: 100%;
+  }
 }
